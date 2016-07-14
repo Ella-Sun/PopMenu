@@ -15,6 +15,9 @@
 		440E40201D373AA40073AA8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440E401E1D373AA40073AA8F /* LaunchScreen.storyboard */; };
 		440E402B1D373AA40073AA8F /* PopMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E402A1D373AA40073AA8F /* PopMenuTests.m */; };
 		440E40361D373AA40073AA8F /* PopMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E40351D373AA40073AA8F /* PopMenuUITests.m */; };
+		440E40461D373B060073AA8F /* PopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E40451D373B060073AA8F /* PopMenu.m */; };
+		440E404A1D3764330073AA8F /* FilterNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E40491D3764330073AA8F /* FilterNaviView.m */; };
+		440E40501D3788630073AA8F /* PopMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E404F1D3788630073AA8F /* PopMenuTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		440E40311D373AA40073AA8F /* PopMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		440E40351D373AA40073AA8F /* PopMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuUITests.m; sourceTree = "<group>"; };
 		440E40371D373AA40073AA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440E40441D373B060073AA8F /* PopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenu.h; sourceTree = "<group>"; };
+		440E40451D373B060073AA8F /* PopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenu.m; sourceTree = "<group>"; };
+		440E40481D3764330073AA8F /* FilterNaviView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterNaviView.h; sourceTree = "<group>"; };
+		440E40491D3764330073AA8F /* FilterNaviView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterNaviView.m; sourceTree = "<group>"; };
+		440E404C1D3764A40073AA8F /* Constants.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.pch; sourceTree = "<group>"; };
+		440E404E1D3788630073AA8F /* PopMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuTableViewCell.h; sourceTree = "<group>"; };
+		440E404F1D3788630073AA8F /* PopMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,12 @@
 		440E400F1D373AA40073AA8F /* PopMenu */ = {
 			isa = PBXGroup;
 			children = (
+				440E40431D373AF60073AA8F /* PopMenu */,
 				440E40131D373AA40073AA8F /* AppDelegate.h */,
 				440E40141D373AA40073AA8F /* AppDelegate.m */,
 				440E40161D373AA40073AA8F /* ViewController.h */,
 				440E40171D373AA40073AA8F /* ViewController.m */,
+				440E40471D3764330073AA8F /* View */,
 				440E40191D373AA40073AA8F /* Main.storyboard */,
 				440E401C1D373AA40073AA8F /* Assets.xcassets */,
 				440E401E1D373AA40073AA8F /* LaunchScreen.storyboard */,
@@ -118,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				440E40111D373AA40073AA8F /* main.m */,
+				440E404C1D3764A40073AA8F /* Constants.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +151,26 @@
 				440E40371D373AA40073AA8F /* Info.plist */,
 			);
 			path = PopMenuUITests;
+			sourceTree = "<group>";
+		};
+		440E40431D373AF60073AA8F /* PopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				440E40441D373B060073AA8F /* PopMenu.h */,
+				440E40451D373B060073AA8F /* PopMenu.m */,
+				440E404E1D3788630073AA8F /* PopMenuTableViewCell.h */,
+				440E404F1D3788630073AA8F /* PopMenuTableViewCell.m */,
+			);
+			path = PopMenu;
+			sourceTree = "<group>";
+		};
+		440E40471D3764330073AA8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				440E40481D3764330073AA8F /* FilterNaviView.h */,
+				440E40491D3764330073AA8F /* FilterNaviView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440E40501D3788630073AA8F /* PopMenuTableViewCell.m in Sources */,
+				440E40461D373B060073AA8F /* PopMenu.m in Sources */,
 				440E40181D373AA40073AA8F /* ViewController.m in Sources */,
 				440E40151D373AA40073AA8F /* AppDelegate.m in Sources */,
 				440E40121D373AA40073AA8F /* main.m in Sources */,
+				440E404A1D3764330073AA8F /* FilterNaviView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +390,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PopMenu/Constants.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -396,6 +434,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PopMenu/Constants.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -496,6 +536,7 @@
 				440E403C1D373AA40073AA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		440E403D1D373AA40073AA8F /* Build configuration list for PBXNativeTarget "PopMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +545,7 @@
 				440E403F1D373AA40073AA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		440E40401D373AA40073AA8F /* Build configuration list for PBXNativeTarget "PopMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +554,7 @@
 				440E40421D373AA40073AA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
